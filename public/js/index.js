@@ -21,7 +21,7 @@ class Personnes extends Bus {
     }
 }
 
-let amine = new Personnes ('reyes', 'sebastian', 10) 
+let perso = new Personnes ('reyes', 'sebastian', 10) 
 
 class Bus {
     constructor (personnes, caisse) {
@@ -40,3 +40,10 @@ class Bus {
 }
 
 let bus = new Bus ([], 0)
+
+perso.seDeplacer(molengeek)
+console.log(`${perso.prénom} est a MolenGeek`);
+perso.seDeplacer(snack)
+console.log(`${perso.prénom} est au snack`);
+perso.seDeplacer(maison)
+console.log(`${perso.prénom} est à la maison`);
