@@ -23,7 +23,6 @@ class Personnes {
 
 let perso = new Personnes ('reyes', 'sebastian', 10) 
 
-
 class Bus {
     constructor (personnes, caisse) {
         this.personnes = personnes
@@ -41,7 +40,6 @@ class Bus {
 }
 
 let bus = new Bus ([], 0)
-
 
 perso.seDeplacer(molengeek)
 console.log(`${perso.prénom} est a MolenGeek`);
