@@ -10,18 +10,19 @@ let molengeek = new Lieux ('Molengeek', [])
 let snack = new Lieux ('snack', [])
 let maison = new Lieux ('maison', [])
 
-class Personnes extends Bus {
+class Personnes {
     constructor (nom, prénom, argent) {
         this.nom = nom
         this.prénom = prénom
         this.argent = argent
     }
     seDeplacer(lieu) {
-        Bus.embarquer(this,lieu)
+        bus.embarquer(this,lieu)
     }
 }
 
 let perso = new Personnes ('reyes', 'sebastian', 10) 
+
 
 class Bus {
     constructor (personnes, caisse) {
@@ -41,9 +42,13 @@ class Bus {
 
 let bus = new Bus ([], 0)
 
+
 perso.seDeplacer(molengeek)
 console.log(`${perso.prénom} est a MolenGeek`);
 perso.seDeplacer(snack)
 console.log(`${perso.prénom} est au snack`);
 perso.seDeplacer(maison)
 console.log(`${perso.prénom} est à la maison`);
+
+console.log(`${perso.prénom} à ${perso.argent.toFixed(2)}`);
+console.log(`le bus à ${bus.caisse.toFixed(2)}`);
