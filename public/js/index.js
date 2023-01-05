@@ -6,9 +6,9 @@ class Lieux  {
 
 }
 
-let molengeek = new Lieux (Molengeek, [])
-let snack = new Lieux (snack, [])
-let maison = new Lieux (maison, [])
+let molengeek = new Lieux ('Molengeek', [])
+let snack = new Lieux ('snack', [])
+let maison = new Lieux ('maison', [])
 
 class Personnes extends Bus {
     constructor (nom, prénom, argent) {
@@ -38,3 +38,5 @@ class Bus {
         }
     }
 }
+
+let bus = new Bus ([], 0)
